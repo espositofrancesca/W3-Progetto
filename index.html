@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="calcolatrice">
+
+
+
+        <div class="display">
+            <p class="fake_btn"><span class="circle"></span><span class="circle"></span><span class="circle"></span></p>
+            <p id="risultato"></p>
+            <p id="calcolo"></p>
+        </div>
+
+      
+
+        <div class="input">
+            <input type="button" onclick="numero('7')" value="7">
+            <input type="button" onclick="numero('8')" value="8">
+            <input type="button" onclick="numero('9')" value="9">
+            <input type="button" class="operatore" onclick="operatore('÷')" value="÷">
+    
+            <input type="button" onclick="numero('4')" value="4">
+            <input type="button" onclick="numero('5')" value="5">
+            <input type="button" onclick="numero('6')" value="6">
+            <input type="button" class="operatore" onclick="operatore('*')" value="x">
+    
+            <input type="button" onclick="numero('1')" value="1">
+            <input type="button" onclick="numero('2')" value="2">
+            <input type="button" onclick="numero('3')" value="3">
+            <input type="button" class="operatore" onclick="operatore('-')" value="-">
+    
+            <input type="button" id="operatore" onclick="reset()" value="C">
+            <input type="button" onclick="numero('0')" value="0">
+            <input type="button" onclick="numero('.')" value=".">
+            <input type="button" class="operatore" onclick="operatore('+')" value="+">
+    
+            <input type="button" id="uguale" value="=" onclick="risultatoDisplay()">
+        </div>
+
+
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
